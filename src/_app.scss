@@ -1,31 +1,31 @@
 @charset "utf-8";
 
-$purple: #8a4d76;
-$pink: #fa7c91;
-$brown: #757763;
-$beige-light: #d0d1cd;
-$beige-lighter: #eff0eb;
-$blue-gray: #161d2e;
-$light-blue-gray: #334155;
+//$purple: #8a4d76;
+//$pink: #fa7c91;
+//$brown: #757763;
+//$beige-light: #d0d1cd;
+//$beige-lighter: #eff0eb;
+//$blue-gray: #161d2e;
+//$light-blue-gray: #334155;
+//
+//// Bulma's global variable overrides
+//$grey-dark: $brown;
+//$grey-light: $beige-light;
+//$primary: $purple;
+//$link: $pink;
+//$widescreen-enabled: false;
+//$fullhd-enabled: false;
+//
+//// Bulma's component variable overrides
+//$body-background-color: $blue-gray;
+//$control-border-width: 2px;
+//$input-border-color: transparent;
+//$input-shadow: none;
+//$input-background-color: $light-blue-gray;
+//$input-color: white;
 
-// Bulma's global variable overrides
-$grey-dark: $brown;
-$grey-light: $beige-light;
-$primary: $purple;
-$link: $pink;
-$widescreen-enabled: false;
-$fullhd-enabled: false;
-
-// Bulma's component variable overrides
-$body-background-color: $blue-gray;
-$control-border-width: 2px;
-$input-border-color: transparent;
-$input-shadow: none;
-$input-background-color: $light-blue-gray;
-$input-color: white;
-
-@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
 // Import only what you need from Bulma
+@import "../node_modules/bulma/bulma.sass";
 
 .badge{
   background-color: #00d1b2;
@@ -39,6 +39,7 @@ $input-color: white;
 body {
   background-color: #161d2e;
   padding: 5%;
+  min-height: 100vh;
 }
 
 code {
@@ -70,4 +71,12 @@ code {
   display: flex;
   list-style-type: none;
   padding-left: 0;
+}
+.visualization{
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.lightMode{
+  background-color: white;
 }
