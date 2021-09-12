@@ -24,9 +24,17 @@ $input-shadow: none;
 $input-background-color: $light-blue-gray;
 $input-color: white;
 
-
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
 // Import only what you need from Bulma
 
+.badge{
+  background-color: #00d1b2;
+  border-radius: 20px;
+  width:60%;
+  color:white;
+  text-transform: capitalize;
+  text-align: center
+}
 
 body {
   background-color: #161d2e;
